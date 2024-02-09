@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Junio 2023-Diciembre 2023",
+    title: "Administrador de Sistemas en Consultoría",
+    company: "Moan Consulting",
+    description:
+      "Me encargaba de Administrar los archivos de una Consultoria. Crear encuestas para cooperativas de gran parte de Argentina y organizar los datos de contacto de las mismas.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
